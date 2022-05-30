@@ -1,0 +1,202 @@
+@import "./settings"
+
+*
+    @include reset
+    
+html
+    @include reset-html
+    
+body
+    @include reset-body
+    position: relative
+    overflow-x: hidden
+
+
+
+/* ########    container-window    ########*/
+
+.container-window
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15)
+    border: 0.2em solid $color-BorderlightPurple
+    transform: translate(-50% ,0%)
+    border-radius: 0em 0em 1em  1em 
+    position: absolute
+    border-top: 0em 
+    height: 70vh
+    width: 60%
+    left: 50%
+    top: 6em
+
+/* ########    head-window    ########*/
+.head-window
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+    border: 0.2em solid $color-BorderlightPurple
+    transform: translate(-50% ,0%)
+    border-radius: 1em 1em 0em 0em 
+    background-color: $color-white
+    position: absolute
+    align-items: center
+    padding-left: 10px
+    display: flex
+    height: 3em
+    width: 60%
+    left: 50%
+    top: 3em
+    gap:10px
+
+    .circle
+        width: 10px
+        height: 10px
+        border-radius: 50%
+    .red
+        background: $color-lightRed
+    .yellow
+        background: $color-lightYallow
+    .green
+        background: $color-lightGreen
+
+/* ########    container name    ########*/
+
+.container-name
+    @include flex-center
+    flex-direction: column
+    margin-top: 70px
+    gap: 10px
+    p
+        font-size: 1.5em
+        color: $color-lightGray
+        font-weight: 600
+    .name
+        @include flex-center
+        
+        h1
+            font-size: 4rem
+            font-weight: 900 
+            color: $color-white
+            -webkit-text-stroke: 0.50px $color-lightGray
+
+/* ########    container menu    ########*/
+    
+.container-menu 
+        @include absolute-center
+        @include flex-center
+        gap: 40px
+        
+        a   
+            color: $color-lightGray
+            font-weight: 600
+            font-size: 1.5em
+        
+        .active
+            color: $color-black
+            position: relative
+
+            &::after
+                content: "  "
+                position: absolute
+                bottom: -5px
+                border-radius: 20px
+                left: 0
+                width: 100%
+                height: 0.3em
+                background: $color-lightPurple
+            
+        .disabled
+            &:hover
+                color: $color-black
+                    
+/* ########    container cv in midias    ########*/
+.container-cv-midias
+    position: absolute
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap:10px
+    padding-bottom: 20px
+    padding-left: 10px
+    bottom: 0
+
+
+    .midias
+        display: flex
+        align-items: center
+        gap:20px
+
+        a
+            @include links-midias
+            &:hover
+                color: $color-lightPurple !important
+
+.animation-arrow
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 280px
+    height: 35px
+    background: $color-white
+    border: 0.3em solid $color-lightPurple
+    border-radius: 50px
+    padding-left: 20px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+
+    
+    
+    a
+        color: $color-lightPurple !important
+        font-weight: 600
+
+    .background-purple
+        @include flex-center
+        flex-direction: column
+        gap:5px
+        background-color: $color-lightPurple
+        height: 100%
+        width: 80px
+        border-radius: 50px 20px 20px 0px 
+    
+        .arrow-bottom
+            background: $color-white
+            height: 0.2em
+            width: 2em
+            border-radius: 20px
+        img
+            animation: arrow 1s infinite alternate-reverse
+
+@keyframes  arrow
+    0%
+        transform: translateY(0px)
+    100%
+        transform: translateY(5px)
+            
+        
+
+
+
+
+
+
+
+
+/* ########    animation   ########*/
+            
+#planet-purple
+    position: absolute
+    right: -100px 
+    top: 50vh   
+    animation: rotation-planet 60s infinite linear
+
+@keyframes  rotation-planet
+    0%
+        transform:  rotate(0deg)
+    100%
+        transform:    rotate(360deg)
+
+#antena
+    position: absolute
+    left: 0
+#scroll
+    position: absolute
+    left: 150px
+    top: 355px
+    height: 300px
+    
