@@ -3,10 +3,10 @@
 
 *
     @include reset
-    
+
 html
     @include reset-html
-    
+
 body
     @include reset-body
     position: relative
@@ -15,34 +15,38 @@ body
 
 
 /* ########    container-window    ########*/
+.container1
+    position: relative
+    height: 90vh
+    width: 100%
+
 
 .container-window
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15)
-    border: 0.2em solid $color-BorderlightPurple
+    border: 0.2em solid $color-lightPurple
+    border-radius: 0em 0em 1em  1em
     transform: translate(-50% ,0%)
-    border-radius: 0em 0em 1em  1em 
     position: absolute
-    border-top: 0em 
-    height: 70vh
-    width: 60%
+    border-top: 0em
+    height: 90%
+    width: 80%
     left: 50%
-    top: 6em
+    top: 3em
 
 /* ########    head-window    ########*/
 .head-window
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
-    border: 0.2em solid $color-BorderlightPurple
+    border: 0.2em solid $color-lightPurple
     transform: translate(-50% ,0%)
-    border-radius: 1em 1em 0em 0em 
+    border-radius: 1em 1em 0em 0em
     background-color: $color-white
     position: absolute
     align-items: center
     padding-left: 10px
     display: flex
     height: 3em
-    width: 60%
+    width: 80%
     left: 50%
-    top: 3em
     gap:10px
 
     .circle
@@ -51,11 +55,14 @@ body
         border-radius: 50%
     .red
         background: $color-lightRed
+        //animation: red  1.2s infinite  alternate-reverse
     .yellow
         background: $color-lightYallow
+        //animation: yellow  1.1s infinite  alternate-reverse
+
     .green
         background: $color-lightGreen
-        animation: green  1s infinite  alternate-reverse linear
+        //animation: green  1s infinite  alternate-reverse
 
 
 
@@ -72,25 +79,25 @@ body
         font-weight: 600
     .name
         @include flex-center
-        
+
         h1
             font-size: 4rem
-            font-weight: 900 
+            font-weight: 900
             color: $color-white
-            -webkit-text-stroke: 0.50px $color-lightGray
+            -webkit-text-stroke: 1px $color-lightGray
 
 /* ########    container menu    ########*/
-    
-.container-menu 
+
+.container-menu
         @include absolute-center
         @include flex-center
         gap: 40px
-        
-        a   
+
+        a
             color: $color-lightGray
             font-weight: 600
             font-size: 1.5em
-        
+
         .active
             color: $color-black
             position: relative
@@ -104,11 +111,11 @@ body
                 width: 100%
                 height: 0.3em
                 background: $color-lightPurple
-            
+
         .disabled
             &:hover
                 color: $color-black
-                    
+
 /* ########    container cv in midias    ########*/
 .container-cv-midias
     position: absolute
@@ -144,8 +151,8 @@ body
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
     position: relative
 
-    
-    
+
+
     a
         color: $color-lightPurple !important
         font-weight: 600
@@ -160,8 +167,8 @@ body
         background-color: $color-lightPurple
         height: 35px
         width: 80px
-        border-radius: 100px 50px 50px 0px 
-    
+        border-radius: 100px 50px 50px 0px
+
         .arrow-bottom
             background: $color-white
             height: 0.2em
@@ -175,23 +182,16 @@ body
         transform: translateY(0px)
     100%
         transform: translateY(5px)
-            
-        
-
-
-
-
-
-
 
 
 /* ########    animation   ########*/
-            
+
 #planet-purple
-    position: absolute
-    right: -100px 
-    top: 50vh   
     animation: rotation-planet 60s infinite linear
+    position: absolute
+    width:  14%
+    bottom: 0
+    right: 0
 
 @keyframes  rotation-planet
     0%
@@ -201,13 +201,30 @@ body
 
 #antena
     position: absolute
-    left: 0
+    left: -10px
+    width: 10%
 #scroll
     position: absolute
-    left: 150px
-    top: 355px
-    height: 300px
-    
+    left: 5%
+    bottom: 6%
+    height: 50%
 
 
+
+
+/* ########    scroll   ########*/
+
+
+/* Track */
+::-webkit-scrollbar-track
+  background: $color-white
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: $color-lightPurple
+  border-radius: 20px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: $color-lightRed
 
