@@ -1,50 +1,19 @@
 //---------------------------------------- colors
 // Theme white
-$color-BorderlightPurple: #EDE6F4
-$color-lightPurple: #AD7AE6
-$color-lightGray:   #929292
-$color-lightRed:    #FD5E56
-$color-lightGreen:  #29C33E
-$color-lightYallow: #FEBC2E
 $color-black:       #000000
+$color-dark-blue:   #547596
+$color-lightGray:   #929292
+$color-blue:        #11B1F5
+$color-light-blue:  #F1F5F9
 $color-white:       #ffffff
 // Theme dark
 //---------------------------------------- reset
 @mixin reset
+    font-family: 'Poppins', sans-serif
     box-sizing: border-box
     text-decoration: none
     list-style: none
     padding: 0
     margin: 0
-//---------------------------------------- reset body
-@mixin reset-body
-    width: 100%
-    height: 200vh
-    padding: 10px
-    
-        
-//---------------------------------------- reset html
 
-@mixin reset-html
-    font-family: 'Plus Jakarta Sans', sans-serif
-    font-size: 62.5%
-    
-//---------------------------------------- reset link midias
-@mixin links-midias
-    font-family: 'IBM Plex Mono', monospace !important
-    color: $color-lightGray !important
-    font-size: 1em
-//---------------------------------------- display-flex
-//center center
-@mixin flex-center
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-wrap: wrap 
-//---------------------------------------- position
-@mixin absolute-center
-    position: absolute
-    transform: translate(-50%,-50%)
-    top: 50%
-    left: 50%
         
