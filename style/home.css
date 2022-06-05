@@ -9,7 +9,7 @@
 
 body, html {
   background-color: #F1F5F9;
-  height: 100vh;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -63,8 +63,17 @@ body, html {
 }
 .container-01 .scrolldown {
   position: absolute;
-  bottom: 80px;
+  bottom: 20px;
   left: 50px;
+  color: #B8CCE0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+}
+.container-01 .scrolldown img {
+  height: 15px;
 }
 .container-01 > div.container-status-midias {
   position: absolute;

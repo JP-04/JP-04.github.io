@@ -1,0 +1,43 @@
+.game-board
+    height: 100vh
+    width: 100%
+    background: linear-gradient( #e2fffe, #cafefe)
+    border-bottom: solid 50px #bbef8e
+    position: relative
+    overflow: hidden
+    
+    .pipe
+        position: absolute
+        bottom: 0
+        height: 40px
+        width: 40px
+        animation: pipe-animation 3s infinite linear 
+
+    .mario
+        width:  100px
+        position: absolute
+        bottom: 0
+
+
+    .jump
+        animation: jump  500ms ease-out
+
+
+
+
+
+@keyframes pipe-animation 
+    from
+        right: -80px
+    to
+        right: 100%
+
+@keyframes jump
+    0%
+        bottom: 0
+    
+    40%,50%,60%
+        bottom: 100px
+    100%
+        bottom: 0
+        
