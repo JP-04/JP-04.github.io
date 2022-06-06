@@ -20,6 +20,7 @@ body,html
     position: fixed
     border-bottom: solid 1px $color-blue 
     top: 0
+    backdrop-filter: blur(5px)
     z-index: 100
     // --------------------------------------- My name
     h3
@@ -146,4 +147,132 @@ body,html
 
 // -------------------------------------------- Container2
       
+.container-02
+    border-bottom: 1px solid #000
+    height: 100vh
+    position: relative
+    
+    h3.title-about-me
+        color: $color-dark-blue
+        position: absolute
+        top: 10vh
+        left: 50%
+        transform: translate(-50%, -0%)
 
+        &::after
+            content: " "
+            position: absolute
+            width: 50%
+            height: 5px
+            background: $color-dark-blue
+            bottom: 0
+            left: 0
+            border-radius: 10px
+
+    .pikachu
+        position: absolute
+        bottom: 0
+        height: 60px
+        animation: pikachu 5s infinite linear
+
+
+    .container-knowledge
+        position: absolute
+        top: 30%
+        left: 50%
+        width: 80%
+        transform: translate(-50%, 0%)
+        display: flex
+        flex-direction: column
+        grid-gap: 30px
+
+        .text-knowledge
+            font-size: 20px
+            color: $color-lightGray
+
+        .container-number
+            display: flex
+            grid-gap: 100px
+
+            span
+                color: $color-dark-blue
+                font-size: 50px
+                font-weight: 600
+            p
+                font-size: 20px
+                color: $color-lightGray
+        
+        .downlad-cv
+            display: flex
+            align-items: center
+            justify-content: space-around
+            width: 200px
+            background: $color-dark-blue
+            border-radius: 40px
+            color: $color-white
+            font-weight: 600
+            box-shadow: 8px 8px 16px #C9D9E8, -8px -8px 16px #FFFFFF
+            transition: 0.5s linear
+            &:hover
+                width: 250px
+                color:$color-dark-blue 
+                background:   $color-white
+                path
+                    fill: $color-dark-blue
+
+
+
+@keyframes pikachu
+    0%
+        left: -50px
+    100%
+        left: 110%
+
+
+
+// -------------------------------------------- Container2
+.container-03
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    color: $color-lightGray
+
+    h1
+        position: absolute
+        left: 100px
+        top: 100px
+        color: $color-blue
+        span
+            color: $color-dark-blue
+            position: relative
+            &::after
+                position: absolute
+                content: "  "
+                width: 100px
+                height: 3px
+                background: $color-dark-blue
+                left: -110px
+                top: 50%
+                transform: translate(0, -50%)
+
+    .my-biography-photo
+        width: 80%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        position: relative
+        img
+            position: relative
+            box-shadow: 3px 3px 0px $color-blue
+            &::after
+                content: " JP-04. João Pereira, 2004 "
+                color: #000
+                position: absolute
+                bottom: -110px
+        span
+            position: absolute
+            left: 0
+            bottom: -50px

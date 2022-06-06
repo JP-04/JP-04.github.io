@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- ---------------------------------------- css  -->
     <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="./style/gameMario.css">
+    <!-- <link rel="stylesheet" href="./style/gameMario.css"> -->
     <title>Home</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <h3 class="JP-04">JP-04</h3>
         <ul>
             <a href="#" class="active"  >   home        </a>
-            <a href="#" class="disabled">   sobre mim   </a>
+            <a href="#section-02" class="disabled">   sobre mim   </a>
             <a href="#" class="disabled">   projetos    </a>
             <a href="#" class="disabled">   stack       </a>
             <img src="./svg/moon.svg"       alt="moon">
@@ -54,25 +54,89 @@
             </div>
     <!-- ---------------------------------------- Container midias sociais  -->
             <div class="midias">
-                <a href="#"><img src="./svg/linkedln.svg"  alt="linkedln"  height="20px">    </a>
-                <a href="#"><img src="./svg/github.svg"    alt="github"    height="20px">      </a>
-                <a href="#"><img src="./svg/instagram.svg" alt="instagram" height="20px">   </a>
+                <a href="https://www.linkedin.com/in/joao-pereira-7736b320b/ " target="_blank">
+                    <img src="./svg/linkedln.svg"  alt="linkedln"  height="20px">    
+                </a>
+                <a href="https://github.com/JP-04" target="_blank">
+                    <img src="./svg/github.svg"    alt="github"    height="20px">  
+                </a>
+                <a href="https://www.instagram.com/joaozinho_pereira__/" target="_blank">
+                    <img src="./svg/instagram.svg" alt="instagram" height="20px">
+               </a>
             </div>
         </div>
     <!-- ---------------------------------------- Container scroll donw e arrow  -->
-        <a href="#" class="scrolldown"><img src="./svg/mouse.svg" alt="mouse">scroll down<img src="svg/arrow.svg" alt="arrow"></a>
+        <a href="#section-02" class="scrolldown"><img src="./svg/mouse.svg" alt="mouse">scroll down<img src="svg/arrow.svg" alt="arrow"></a>
     </section>
 
 
 
 
-    <!-- ---------------------------------------- Conatiner 1  -->
-    <section class="container-02 game-board">
+    <!-- <section class="container-02 game-board">
         <img src="./img/pipe.png"       alt="" class="pipe">
         <img src="./img/mario.gif"      alt="" class="mario jump">
+        <img src="./img/clouds.png"      alt="" class="clouds">
+    </section> -->
+    <!-- ---------------------------------------- Conatiner 2  -->
+
+
+    <section class="container-02" >
+        <a name="section-02"></a>
+        <h3 class="title-about-me">sobre mim</h3>
+        <img src="./img/pikachu.gif" alt="" class="pikachu">
+        <div class="container-knowledge">
+<!-- texto de conhecimentos -->
+            <p class="text-knowledge">
+                Desenvolvedor Web, com amplo conhecimento e anos de experiência, atuando em   <br>tecnologias web e
+                 designer de Ui/Ux, entregando um trabalho de qualidade
+            </p>
+<!-- container de anos de experiencia -->
+            <div class="container-number">
+                <p class="text-numbers">
+                    <span>+02</span> <br>
+                    anos <br>
+                    de experiencia
+                </p>
+                <p class="text-numbers">
+                    <span>+05</span> <br>
+                    projetos <br>
+                    completos
+                </p>
+            </div>
+<!-- botão de downlad do cv -->
+            <a href="##" class="downlad-cv">download cv
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19998 6.19995C5.3778 6.19995 4.58931 6.52656 4.00794 7.10792C3.42658 7.68928 3.09998 8.47778 3.09998 9.29995V21.7C3.09998 22.5221 3.42658 23.3106 4.00794 23.892C4.58931 24.4733 5.3778 24.8 6.19998 24.8H24.8C25.6221 24.8 26.4106 24.4733 26.992 23.892C27.5734 23.3106 27.9 22.5221 27.9 21.7V12.4C27.9 11.5778 27.5734 10.7893 26.992 10.2079C26.4106 9.62656 25.6221 9.29995 24.8 9.29995H17.05L13.95 6.19995H6.19998ZM17.05 13.95C17.05 13.5389 16.8867 13.1446 16.596 12.8539C16.3053 12.5633 15.9111 12.4 15.5 12.4C15.0889 12.4 14.6946 12.5633 14.404 12.8539C14.1133 13.1446 13.95 13.5389 13.95 13.95V16.4083L13.4958 15.9541C13.3528 15.8061 13.1818 15.688 12.9927 15.6067C12.8036 15.5255 12.6002 15.4828 12.3944 15.481C12.1886 15.4792 11.9845 15.5184 11.794 15.5963C11.6035 15.6743 11.4304 15.7894 11.2849 15.9349C11.1394 16.0804 11.0243 16.2535 10.9464 16.444C10.8684 16.6345 10.8292 16.8386 10.831 17.0444C10.8328 17.2502 10.8755 17.4536 10.9568 17.6427C11.038 17.8318 11.1561 18.0028 11.3041 18.1458L14.4041 21.2458L14.4072 21.2489C14.5507 21.3924 14.7211 21.5062 14.9086 21.5839C15.0961 21.6616 15.297 21.7015 15.5 21.7015C15.7029 21.7015 15.9039 21.6616 16.0914 21.5839C16.2789 21.5062 16.4492 21.3924 16.5927 21.2489L16.5958 21.2458L19.6958 18.1458C19.9782 17.8535 20.1344 17.4619 20.1309 17.0555C20.1273 16.6491 19.9643 16.2604 19.6769 15.973C19.3896 15.6856 19.0008 15.5226 18.5944 15.5191C18.188 15.5155 17.7965 15.6718 17.5041 15.9541L17.05 16.4083V13.95Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
     </section>
 
 
-<script src="./js/gameMario.js"></script>
+
+
+    <!-- ---------------------------------------- Conatiner 3  -->
+    <section class="container-03">
+        <h1><span>01</span>&nbsp; QUEM EU SOU</h1>
+        <div class="my-biography-photo">
+                <img src="./img/minhafoto.png" alt="" height="230px"> <br>
+                <span>JP-04. <br> Joao Pereira, 2004</span>
+            <p>
+                Nascido em Franco da Rocha 2004. Depois de                          <br>
+                me formar em Desenvolvimento de sistemas                            <br>
+                venho buscando um emprego como Desenvolvedor                        <br>
+                full-stack junior em alguma empresa voltada                         <br>
+                para desenolver aplicaões web para empresas terceiras               <br>
+                fui responsável pela operações de sites de mais de uma duzia        <br>
+                de pessoas aqui em meu bairro.                                      <br>
+
+                Em 2021 iniciei minhas próprias atividades como web designer e <br>
+                sou um provedor único de design e codificação 
+            </p>
+        </div>
+
+
+    </section>
+<!-- <script src="./js/gameMario.js"></script> -->
 </body>
 </html>

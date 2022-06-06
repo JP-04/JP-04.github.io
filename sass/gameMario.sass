@@ -1,8 +1,8 @@
 .game-board
-    height: 100vh
+    height: 30vh
     width: 100%
-    background: linear-gradient( #e2fffe, #cafefe)
-    border-bottom: solid 50px #bbef8e
+    background: linear-gradient( #96f1ee, #cafefe)
+    border-bottom: solid 5px #5afd83
     position: relative
     overflow: hidden
     
@@ -17,12 +17,20 @@
         width:  100px
         position: absolute
         bottom: 0
-
+    .clouds
+        position: absolute
+        width: 100px
+        animation: clouds-animation 10s infinite linear 
+        top: 50%
 
     .jump
         animation: jump  500ms ease-out
 
-
+@keyframes clouds-animation 
+    from
+        right: -100px
+    to
+        right: 100%
 
 
 

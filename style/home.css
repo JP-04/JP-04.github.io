@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -24,6 +25,7 @@ body, html {
   position: fixed;
   border-bottom: solid 1px #11B1F5;
   top: 0;
+  backdrop-filter: blur(5px);
   z-index: 100;
 }
 .header h3 {
@@ -147,6 +149,142 @@ body, html {
   width: 30px;
   border-radius: 50%;
   box-shadow: 8px 8px 16px #C9D9E8, -8px -8px 16px #FFFFFF;
+}
+
+.container-02 {
+  border-bottom: 1px solid #000;
+  height: 100vh;
+  position: relative;
+}
+.container-02 h3.title-about-me {
+  color: #547596;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.container-02 h3.title-about-me::after {
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background: #547596;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.container-02 .pikachu {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  animation: pikachu 5s infinite linear;
+}
+.container-02 .container-knowledge {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.container-02 .container-knowledge .text-knowledge {
+  font-size: 20px;
+  color: #929292;
+}
+.container-02 .container-knowledge .container-number {
+  display: flex;
+  grid-gap: 100px;
+}
+.container-02 .container-knowledge .container-number span {
+  color: #547596;
+  font-size: 50px;
+  font-weight: 600;
+}
+.container-02 .container-knowledge .container-number p {
+  font-size: 20px;
+  color: #929292;
+}
+.container-02 .container-knowledge .downlad-cv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  background: #547596;
+  border-radius: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 8px 8px 16px #C9D9E8, -8px -8px 16px #FFFFFF;
+  transition: 0.5s linear;
+}
+.container-02 .container-knowledge .downlad-cv:hover {
+  width: 250px;
+  color: #547596;
+  background: #ffffff;
+}
+.container-02 .container-knowledge .downlad-cv:hover path {
+  fill: #547596;
+}
+
+@keyframes pikachu {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+.container-03 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #929292;
+}
+.container-03 h1 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  color: #11B1F5;
+}
+.container-03 h1 span {
+  color: #547596;
+  position: relative;
+}
+.container-03 h1 span::after {
+  position: absolute;
+  content: "  ";
+  width: 100px;
+  height: 3px;
+  background: #547596;
+  left: -110px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.container-03 .my-biography-photo {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container-03 .my-biography-photo img {
+  position: relative;
+  box-shadow: 3px 3px 0px #11B1F5;
+}
+.container-03 .my-biography-photo img::after {
+  content: " JP-04. João Pereira, 2004 ";
+  color: #000;
+  position: absolute;
+  bottom: -110px;
+}
+.container-03 .my-biography-photo span {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
 }
 
 /*# sourceMappingURL=home.css.map */
