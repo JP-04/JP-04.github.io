@@ -217,8 +217,9 @@ body,html
                 width: 250px
                 color:$color-dark-blue 
                 background:   $color-white
-                >path
-                    fill: $color-dark-blue
+                >svg
+                    >path
+                        fill: $color-dark-blue
 
 
 
@@ -230,7 +231,7 @@ body,html
 
 
 
-// -------------------------------------------- Container2
+// -------------------------------------------- Container3
 .container-03
     height: 100vh
     display: flex
@@ -276,3 +277,85 @@ body,html
             position: absolute
             left: 0
             bottom: -50px
+
+
+
+
+// -------------------------------------------- Container 4
+.container-4
+    height: 100vh
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    >h1
+        position: absolute
+        left: 100px
+        top: 100px
+        color: $color-blue
+        >span
+            color: $color-dark-blue
+            position: relative
+            &::after
+                position: absolute
+                content: "  "
+                width: 100px
+                height: 3px
+                background: $color-dark-blue
+                left: -110px
+                top: 50%
+                transform: translate(0, -50%)
+
+    >.container-paixao
+        display: flex
+        align-items: center
+        justify-content: space-around
+        width: 100%
+
+        >.conteudo-paixao
+            display: flex
+            justify-content: center
+            align-items: start
+            flex-direction: column
+            grid-gap: 20px
+            >p
+                font-size: 15px
+                text-align: start
+                height: 200px
+                color: $color-lightGray
+
+
+
+            
+// -------------------------------------------- Container 5
+.container-05
+    background: $color-background
+    height: 150vh
+    width: 100%
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+    >h1
+        position: absolute
+        left: 100px
+        top: 100px
+        color: $color-white
+        >span
+            color: $color-dark-blue
+            position: relative
+            &::after
+                position: absolute
+                content: "  "
+                width: 100px
+                height: 3px
+                background: $color-white
+                left: -110px
+                top: 50%
+                transform: translate(0, -50%)
+    >.ancora
+        position: absolute
+        left: 0
+        top: 0

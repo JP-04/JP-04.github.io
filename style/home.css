@@ -223,7 +223,7 @@ body, html {
   color: #547596;
   background: #ffffff;
 }
-.container-02 > .container-knowledge > .downlad-cv:hover > path {
+.container-02 > .container-knowledge > .downlad-cv:hover > svg > path {
   fill: #547596;
 }
 
@@ -285,6 +285,88 @@ body, html {
   position: absolute;
   left: 0;
   bottom: -50px;
+}
+
+.container-4 {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-4 > h1 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  color: #11B1F5;
+}
+.container-4 > h1 > span {
+  color: #547596;
+  position: relative;
+}
+.container-4 > h1 > span::after {
+  position: absolute;
+  content: "  ";
+  width: 100px;
+  height: 3px;
+  background: #547596;
+  left: -110px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.container-4 > .container-paixao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.container-4 > .container-paixao > .conteudo-paixao {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.container-4 > .container-paixao > .conteudo-paixao > p {
+  font-size: 15px;
+  text-align: start;
+  height: 200px;
+  color: #929292;
+}
+
+.container-05 {
+  background: #C9D9E8;
+  height: 150vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-05 > h1 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  color: #ffffff;
+}
+.container-05 > h1 > span {
+  color: #547596;
+  position: relative;
+}
+.container-05 > h1 > span::after {
+  position: absolute;
+  content: "  ";
+  width: 100px;
+  height: 3px;
+  background: #ffffff;
+  left: -110px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.container-05 > .ancora {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=home.css.map */
