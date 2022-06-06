@@ -127,7 +127,7 @@ body,html
             position: absolute
             bottom: 0
             left: 50%
-            ransform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
             display: flex
             align-items: center
             justify-content: center
@@ -152,7 +152,7 @@ body,html
     height: 100vh
     position: relative
     
-    h3.title-about-me
+    >h3.title-about-me
         color: $color-dark-blue
         position: absolute
         top: 10vh
@@ -169,14 +169,14 @@ body,html
             left: 0
             border-radius: 10px
 
-    .pikachu
+    >.pikachu
         position: absolute
         bottom: 0
         height: 60px
         animation: pikachu 5s infinite linear
 
 
-    .container-knowledge
+    >.container-knowledge
         position: absolute
         top: 30%
         left: 50%
@@ -186,23 +186,23 @@ body,html
         flex-direction: column
         grid-gap: 30px
 
-        .text-knowledge
+        >.text-knowledge
             font-size: 20px
             color: $color-lightGray
 
-        .container-number
+        >.container-number
             display: flex
             grid-gap: 100px
 
-            span
+            >span
                 color: $color-dark-blue
                 font-size: 50px
                 font-weight: 600
-            p
+            >p
                 font-size: 20px
                 color: $color-lightGray
         
-        .downlad-cv
+        >.downlad-cv
             display: flex
             align-items: center
             justify-content: space-around
@@ -217,7 +217,7 @@ body,html
                 width: 250px
                 color:$color-dark-blue 
                 background:   $color-white
-                path
+                >path
                     fill: $color-dark-blue
 
 
@@ -239,12 +239,12 @@ body,html
     position: relative
     color: $color-lightGray
 
-    h1
+    >h1
         position: absolute
         left: 100px
         top: 100px
         color: $color-blue
-        span
+        >span
             color: $color-dark-blue
             position: relative
             &::after
@@ -257,14 +257,14 @@ body,html
                 top: 50%
                 transform: translate(0, -50%)
 
-    .my-biography-photo
+    >.my-biography-photo
         width: 80%
         display: flex
         align-items: center
         justify-content: space-between
         flex-wrap: wrap
         position: relative
-        img
+        >img
             position: relative
             box-shadow: 3px 3px 0px $color-blue
             &::after
@@ -272,7 +272,7 @@ body,html
                 color: #000
                 position: absolute
                 bottom: -110px
-        span
+        >span
             position: absolute
             left: 0
             bottom: -50px

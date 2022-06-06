@@ -134,7 +134,7 @@ body, html {
   position: absolute;
   bottom: 0;
   left: 50%;
-  ransform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,14 +156,14 @@ body, html {
   height: 100vh;
   position: relative;
 }
-.container-02 h3.title-about-me {
+.container-02 > h3.title-about-me {
   color: #547596;
   position: absolute;
   top: 10vh;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.container-02 h3.title-about-me::after {
+.container-02 > h3.title-about-me::after {
   content: " ";
   position: absolute;
   width: 50%;
@@ -173,13 +173,13 @@ body, html {
   left: 0;
   border-radius: 10px;
 }
-.container-02 .pikachu {
+.container-02 > .pikachu {
   position: absolute;
   bottom: 0;
   height: 60px;
   animation: pikachu 5s infinite linear;
 }
-.container-02 .container-knowledge {
+.container-02 > .container-knowledge {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -189,24 +189,24 @@ body, html {
   flex-direction: column;
   grid-gap: 30px;
 }
-.container-02 .container-knowledge .text-knowledge {
+.container-02 > .container-knowledge > .text-knowledge {
   font-size: 20px;
   color: #929292;
 }
-.container-02 .container-knowledge .container-number {
+.container-02 > .container-knowledge > .container-number {
   display: flex;
   grid-gap: 100px;
 }
-.container-02 .container-knowledge .container-number span {
+.container-02 > .container-knowledge > .container-number > span {
   color: #547596;
   font-size: 50px;
   font-weight: 600;
 }
-.container-02 .container-knowledge .container-number p {
+.container-02 > .container-knowledge > .container-number > p {
   font-size: 20px;
   color: #929292;
 }
-.container-02 .container-knowledge .downlad-cv {
+.container-02 > .container-knowledge > .downlad-cv {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -218,12 +218,12 @@ body, html {
   box-shadow: 8px 8px 16px #C9D9E8, -8px -8px 16px #FFFFFF;
   transition: 0.5s linear;
 }
-.container-02 .container-knowledge .downlad-cv:hover {
+.container-02 > .container-knowledge > .downlad-cv:hover {
   width: 250px;
   color: #547596;
   background: #ffffff;
 }
-.container-02 .container-knowledge .downlad-cv:hover path {
+.container-02 > .container-knowledge > .downlad-cv:hover > path {
   fill: #547596;
 }
 
@@ -243,17 +243,17 @@ body, html {
   position: relative;
   color: #929292;
 }
-.container-03 h1 {
+.container-03 > h1 {
   position: absolute;
   left: 100px;
   top: 100px;
   color: #11B1F5;
 }
-.container-03 h1 span {
+.container-03 > h1 > span {
   color: #547596;
   position: relative;
 }
-.container-03 h1 span::after {
+.container-03 > h1 > span::after {
   position: absolute;
   content: "  ";
   width: 100px;
@@ -263,7 +263,7 @@ body, html {
   top: 50%;
   transform: translate(0, -50%);
 }
-.container-03 .my-biography-photo {
+.container-03 > .my-biography-photo {
   width: 80%;
   display: flex;
   align-items: center;
@@ -271,17 +271,17 @@ body, html {
   flex-wrap: wrap;
   position: relative;
 }
-.container-03 .my-biography-photo img {
+.container-03 > .my-biography-photo > img {
   position: relative;
   box-shadow: 3px 3px 0px #11B1F5;
 }
-.container-03 .my-biography-photo img::after {
+.container-03 > .my-biography-photo > img::after {
   content: " JP-04. João Pereira, 2004 ";
   color: #000;
   position: absolute;
   bottom: -110px;
 }
-.container-03 .my-biography-photo span {
+.container-03 > .my-biography-photo > span {
   position: absolute;
   left: 0;
   bottom: -50px;
