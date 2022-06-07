@@ -80,22 +80,24 @@ body,html
             @include gap-20px
 
             >h1
-                font-size: 50px
+                @include fonte-50px
                 color: $color-dark-blue
             >span
                 color: $color-dark-blue
                 font-weight: 600
-                font-size: 24px
+                @include fonte-25px
+                
             >p
                 color: $color-dark-blue
-                font-size: 24px
+                @include fonte-25px
+                
 
             >a>.contact
                 background: #F1F5F9
                 box-shadow: 8px 8px 16px #C9D9E8, -8px -8px 16px #FFFFFF
                 border-radius: 24px
                 width: 200px
-                font-size: 15px
+                @include fonte-15px
                 height: 40px
                 @include flex-space-around
                 color: $color-blue
@@ -162,10 +164,11 @@ body,html
         transform: translate(-50%, 0%)
         display: flex
         flex-direction: column
-        grid-gap: 30px
+        @include gap-20px
+        
 
         >.text-knowledge
-            font-size: 20px
+            @include fonte-25px
             color: $color-lightGray
 
         >.container-number
@@ -174,10 +177,10 @@ body,html
 
             >p.text-numbers>span
                 color: $color-dark-blue
-                font-size: 50px
+                @include fonte-50px
                 font-weight: 600
             >p
-                font-size: 20px
+                @include fonte-25px
                 color: $color-lightGray
         
         >.downlad-cv
@@ -211,7 +214,6 @@ body,html
 .container-03
     @include containers
     @include flex-center
-    
     color: $color-lightGray
 
     >h1
@@ -271,12 +273,10 @@ body,html
             flex-direction: column
 
             >p
-                font-size: 15px
+                @include fonte-15px
                 text-align: start
                 height: 200px
                 color: $color-lightGray
-
-
 
             
 // -------------------------------------------- Container 5
