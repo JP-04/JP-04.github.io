@@ -20,7 +20,7 @@
 }
 .game-board .clouds {
   position: absolute;
-  width: 100px;
+  width: 100px;       
   animation: clouds-animation 10s infinite linear;
   top: 50%;
 }
