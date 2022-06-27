@@ -1,0 +1,302 @@
+.headerPrincipal {
+  margin-top: -80px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 40px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+.headerPrincipal a:hover {
+  color: #0ACF83;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+}
+
+.containers {
+  height: 100vh;
+  width: 100%;
+}
+.containers .container-portifolio {
+  position: relative;
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7764705882);
+  height: 50vh;
+}
+.containers .container-portifolio .portifolio {
+  width: 300px;
+}
+.containers .container-portifolio .portifolio h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.containers .container-portifolio .portifolio h2 {
+  font-weight: 600;
+  font-size: 60px;
+}
+.containers .container-midias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-top: 100px;
+}
+.containers .container-midias span {
+  font-weight: 600;
+}
+.containers .container-midias .img-midias {
+  height: 50px;
+}
+
+.container-sobre {
+  position: relative;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.container-sobre .sobre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  top: 100px;
+  width: 500px;
+  position: relative;
+}
+.container-sobre .sobre p {
+  font-size: 20px;
+}
+.container-sobre .sobre .dadosSobre {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-sobre .sobre .dadosSobre p span {
+  font-size: 30px;
+  color: #0ACF83;
+  font-weight: 600;
+}
+.container-sobre .cv {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4901960784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+  transition: 1s;
+}
+.container-sobre .cv:hover {
+  background-color: #0ACF83;
+  color: #000;
+}
+.container-sobre .container-imgs-sobre {
+  position: absolute;
+  bottom: -10px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container-sobre .container-imgs-sobre .mesa {
+  margin-bottom: -50px;
+}
+.container-sobre .container-imgs-sobre .planta {
+  margin-bottom: -10px;
+}
+
+.container-quem-sou-eu {
+  position: relative;
+  background-image: url(/components/imgs/fundo-quem-sou-eu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #878787;
+}
+.container-quem-sou-eu h3 {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.container-quem-sou-eu .quem-sou-eu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.container-quem-sou-eu .quem-sou-eu .texto-que-sou {
+  width: 400px;
+}
+.container-quem-sou-eu .position-planta {
+  position: absolute;
+  bottom: 0;
+}
+
+.container-paixao {
+  position: relative;
+  background-image: url(/components/imgs/ondaPreta.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.container-paixao h3 {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.container-paixao .onda-preta {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 800px;
+}
+.container-paixao .planeta {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  animation: planeta-rotation 10s infinite linear;
+}
+.container-paixao .planta-alta {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+.container-paixao .container-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  gap: 30px;
+}
+.container-paixao .container-card .card {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+.container-paixao .container-card .card p {
+  text-align: start;
+  font-weight: 200;
+}
+
+.container-stack {
+  background: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container-stack h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.container-stack .container-janela {
+  background-color: #363636;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 100px;
+  position: relative;
+  border-radius: 10px;
+}
+.container-stack .header-janela {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2862745098);
+  background: #363636;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+.container-stack .header-janela .bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.container-stack .header-janela .bolinha-verde {
+  background-color: #ACE7AF;
+}
+.container-stack .header-janela .bolinha-laranja {
+  background-color: #E4B58F;
+}
+.container-stack .header-janela .bolinha-vermelha {
+  background-color: #E18072;
+}
+.container-stack .container-icons {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 0;
+}
+.container-stack .container-icons .fantasma {
+  animation: fantasma-rotation 2s infinite linear alternate-reverse;
+}
+.container-stack .container-icons .fantasma2 {
+  animation: fantasma-rotation 4s infinite linear alternate-reverse;
+}
+
+@keyframes planeta-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fantasma-rotation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes fantasma-rotation2 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
